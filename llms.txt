@@ -1,0 +1,35 @@
+# FlossChart
+
+> FlossChart turns a photo into a printable cross-stitch pattern with DMC floss colors, in the web browser. The photo never leaves the device. Free preview and free floss list for every size; charts up to 40 x 40 stitches print free; bigger charts (up to 500 x 500 stitches) need a one-time unlock of 5.00 EUR via PayPal. No account, no subscription.
+
+## The free tool
+
+- [FlossChart, English](https://floss.toolkitsdesk.com/): upload a photo, set width in stitches (20 to 500) and number of DMC colors (2 to 60), confetti cleanup (off, normal, strong), Aida 11, 14, 16 or 18 count, print or download a PDF with symbols, floss list and skein estimates.
+- [FlossChart, Deutsch](https://floss.toolkitsdesk.com/index.de.html)
+- [FlossChart, Français](https://floss.toolkitsdesk.com/index.fr.html)
+- [FlossChart, Español](https://floss.toolkitsdesk.com/index.es.html)
+
+## Guides
+
+- [All guides](https://floss.toolkitsdesk.com/guides/): hub page.
+- [Photo to cross-stitch pattern, step by step](https://floss.toolkitsdesk.com/guides/photo-to-cross-stitch-pattern.html): Size, colors, confetti cleanup and printing.
+- [DMC floss color chart (489 colors)](https://floss.toolkitsdesk.com/guides/dmc-color-chart.html): Every DMC number with its name and screen color.
+- [Red and pink DMC colors (74)](https://floss.toolkitsdesk.com/guides/dmc-red-and-pink-colors.html): 74 red and pink DMC colors, light to dark, with look-alikes.
+- [Orange, peach and copper DMC colors (37)](https://floss.toolkitsdesk.com/guides/dmc-orange-and-peach-colors.html): 37 orange, peach and copper DMC colors, light to dark, with look-alikes.
+- [Yellow and gold DMC colors (58)](https://floss.toolkitsdesk.com/guides/dmc-yellow-and-gold-colors.html): 58 yellow and gold DMC colors, light to dark, with look-alikes.
+- [Green DMC colors (111)](https://floss.toolkitsdesk.com/guides/dmc-green-colors.html): 111 green DMC colors, light to dark, with look-alikes.
+- [Blue and turquoise DMC colors (89)](https://floss.toolkitsdesk.com/guides/dmc-blue-and-turquoise-colors.html): 89 blue and turquoise DMC colors, light to dark, with look-alikes.
+- [Purple, violet and mauve DMC colors (60)](https://floss.toolkitsdesk.com/guides/dmc-purple-and-violet-colors.html): 60 purple, violet and mauve DMC colors, light to dark, with look-alikes.
+- [Brown, beige and tan DMC colors (78)](https://floss.toolkitsdesk.com/guides/dmc-brown-and-beige-colors.html): 78 brown, beige and tan DMC colors, light to dark, with look-alikes.
+- [Gray, white and black DMC colors (54)](https://floss.toolkitsdesk.com/guides/dmc-gray-white-and-black-colors.html): 54 gray, white and black DMC colors, light to dark, with look-alikes.
+- [How to read a cross-stitch chart](https://floss.toolkitsdesk.com/guides/how-to-read-a-cross-stitch-chart.html): Key, symbols, grid lines, edge numbers and pages.
+- [Cross-stitch size chart](https://floss.toolkitsdesk.com/guides/cross-stitch-size-chart.html): Stitches to cm and inches on 11, 14, 16 and 18 count.
+- [How many skeins of floss?](https://floss.toolkitsdesk.com/guides/how-many-skeins-of-floss.html): Skeins per color for 500 to 20.000 stitches.
+
+## Facts
+
+- Color data: 489 DMC six-strand floss colors from craft-color-codes by MakeBead (https://github.com/makebead/craft-color-codes), CC BY 4.0. Screen colors are approximations of real thread.
+- Finished size: stitches / fabric count = inches. 140 stitches on 14 count = 10 inches (25,4 cm).
+- Skein estimate: about 1.800 full stitches per skein on 14 count with 2 strands, waste included.
+- FlossChart is not affiliated with DMC. DMC is a trademark of its owner.
+- Seller and contact: see the imprint (https://floss.toolkitsdesk.com/imprint.html). Support: support.toolkits.desk@gmail.com.

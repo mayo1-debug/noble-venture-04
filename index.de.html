@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="de" data-page-lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlossChart: aus einem Foto eine Kreuzstich-Stickvorlage machen</title>
+<meta name="description" content="Mach aus jedem Foto eine Kreuzstich-Stickvorlage mit DMC-Garnfarben, Symbolen, Garnliste und Strangschätzung. Läuft im Browser. Dein Foto verlässt nie dein Gerät.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://floss.toolkitsdesk.com/index.de.html">
+<meta property="og:title" content="FlossChart: aus einem Foto eine Kreuzstich-Stickvorlage machen">
+<meta property="og:description" content="Mach aus jedem Foto eine Kreuzstich-Stickvorlage mit DMC-Garnfarben, Symbolen, Garnliste und Strangschätzung. Läuft im Browser. Dein Foto verlässt nie dein Gerät.">
+<meta property="og:image" content="https://floss.toolkitsdesk.com/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FlossChart: aus einem Foto eine Kreuzstich-Stickvorlage machen">
+<meta name="twitter:description" content="Mach aus jedem Foto eine Kreuzstich-Stickvorlage mit DMC-Garnfarben, Symbolen, Garnliste und Strangschätzung. Läuft im Browser. Dein Foto verlässt nie dein Gerät.">
+<meta name="twitter:image" content="https://floss.toolkitsdesk.com/share.png">
+<!-- seo:head -->
+<link rel="canonical" href="https://floss.toolkitsdesk.com/index.de.html">
+<link rel="alternate" hreflang="en" href="https://floss.toolkitsdesk.com/">
+<link rel="alternate" hreflang="de" href="https://floss.toolkitsdesk.com/index.de.html">
+<link rel="alternate" hreflang="fr" href="https://floss.toolkitsdesk.com/index.fr.html">
+<link rel="alternate" hreflang="es" href="https://floss.toolkitsdesk.com/index.es.html">
+<link rel="alternate" hreflang="x-default" href="https://floss.toolkitsdesk.com/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"FlossChart","url":"https://floss.toolkitsdesk.com/index.de.html","inLanguage":"de","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","description":"Mach aus jedem Foto eine Kreuzstich-Stickvorlage mit DMC-Garnfarben, Symbolen, Garnliste und Strangschätzung. Läuft im Browser. Dein Foto verlässt nie dein Gerät.","offers":[{"@type":"Offer","price":"0","priceCurrency":"EUR","description":"Druckbare Vorlagen bis 40 x 40 Stiche"},{"@type":"Offer","price":"5.00","priceCurrency":"EUR","description":"Druckbare Vorlagen bis 500 x 500 Stiche"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Wird mein Foto irgendwohin hochgeladen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die Stickvorlage wird von Code erstellt, der in deinem Browser läuft. Das Foto wird nie an einen Server gesendet."}},{"@type":"Question","name":"Welche Garnmarke?","acceptedAnswer":{"@type":"Answer","text":"DMC-Baumwollgarn mit sechs Fäden, zugeordnet aus einer Tabelle mit 489 DMC-Farben (Farbdaten: craft-color-codes von MakeBead, CC BY 4.0). Bildschirmfarben sind nur Näherungen. Prüfe das echte Garn, bevor du viel davon kaufst."}},{"@type":"Question","name":"Wie groß wird das Bild?","acceptedAnswer":{"@type":"Answer","text":"Das Tool zeigt die fertige Größe für Aida mit 11, 14, 16 und 18 count. Beispiel: 140 Stiche Breite auf 14 count sind 10 Zoll (25,4 cm)."}},{"@type":"Question","name":"Was bekomme ich, wenn ich bezahle?","acceptedAnswer":{"@type":"Answer","text":"Drucken in jeder Größe bis 500 x 500 Stiche, für so viele Vorlagen, wie du willst, in dem Browser, in dem du bezahlt hast. Die Freischaltung wird in diesem Browser gespeichert. Bewahre deine PayPal-Bestellnummer auf. Wenn du deine Browserdaten löschst oder das Gerät wechselst, schreib dem Support mit der Bestellnummer."}},{"@type":"Question","name":"Kann ich mein Geld zurückbekommen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Siehe die refund policy."}},{"@type":"Question","name":"Kann ich jedes Bild verwenden?","acceptedAnswer":{"@type":"Answer","text":"Nutze deine eigenen Fotos oder Bilder, deren Nutzung dir erlaubt ist. Wer fremde Kunstwerke in eine Stickvorlage umsetzt, kann deren Urheberrecht verletzen."}}],"inLanguage":"de"}</script>
+<!-- /seo:head -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23b0413e'/%3E%3Cpath d='M3 3l10 10M13 3L3 13' stroke='%23fff' stroke-width='2.5'/%3E%3C/svg%3E">
+</head>
+<body>
+<div id="testmode" class="testmode" data-i18n="testmode" hidden>Testmodus: Zahlungen laufen über die PayPal-Sandbox. Es wird kein echtes Geld abgebucht.</div>
+<header class="top">
+  <a class="brand" href="./"><span class="logo" aria-hidden="true">✕</span> FlossChart</a>
+  <div class="langsw" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Sprache">
+    <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button><button type="button" data-lang="de" lang="de" aria-pressed="true">DE</button><button type="button" data-lang="fr" lang="fr" aria-pressed="false">FR</button><button type="button" data-lang="es" lang="es" aria-pressed="false">ES</button>
+  </div>
+  <nav><a href="#how" data-i18n="nav.how">So geht&#x27;s</a> <a href="#pricing" data-i18n="nav.pricing">Preis</a> <a href="#faq" data-i18n="nav.faq">FAQ</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <h1 data-i18n="hero.h1">Aus jedem Foto eine Kreuzstich-Stickvorlage</h1>
+  <p class="lead" data-i18n="hero.lead">Foto hochladen, Größe und Anzahl der DMC-Farben wählen. Du bekommst eine saubere, druckbare Stickvorlage mit Symbolen, Garnliste und Strangschätzung.</p>
+  <ul class="ticks">
+    <li data-i18n-html="hero.t1">Läuft im Browser. <strong>Dein Foto verlässt nie dein Gerät.</strong></li>
+    <li data-i18n="hero.t2">Weniger einzelne Stiche (&quot;Konfetti&quot;) mit einem Klick.</li>
+    <li data-i18n-html="hero.t3">Vorlagen bis 500 x 500 Stiche. Vorschau gratis, Vorlagen bis 40 x 40 gratis. Größere Vorlagen: <strong>einmalig 5 €</strong>, kein Abo.</li>
+  </ul>
+  <button class="btn big" id="upload" type="button" data-i18n="hero.upload">Foto hochladen</button>
+  <button class="btn ghost big" id="sample" type="button" data-i18n="hero.sample">Beispielbild ausprobieren</button>
+</section>
+
+<section class="tool" id="tool">
+  <input type="file" id="file" accept="image/*" hidden>
+  <div id="drop" class="drop" data-i18n="drop.text">Foto hierher ziehen oder den Button oben nutzen. JPG, PNG, WebP.</div>
+
+  <div class="panel" id="panel" hidden>
+    <div class="controls">
+      <label><span data-i18n="ctl.width">Breite in Stichen</span> <output id="wOut">100</output>
+        <input type="range" id="width" min="20" max="500" step="5" value="100"></label>
+      <label><span data-i18n="ctl.colors">Anzahl der Farben</span> <output id="cOut">20</output>
+        <input type="range" id="colors" min="2" max="60" value="20"></label>
+      <label><span data-i18n="ctl.cleanup">Einzelstiche bereinigen (Konfetti)</span>
+        <select id="cleanup"><option value="0" data-i18n="cleanup.off">Aus</option><option value="1" selected data-i18n="cleanup.normal">Normal</option><option value="2" data-i18n="cleanup.strong">Stark (fasst auch seltene Farben zusammen)</option></select></label>
+      <label><span data-i18n="ctl.fabric">Stoff (Aida, Count)</span>
+        <select id="fabric"><option>11</option><option selected>14</option><option>16</option><option>18</option></select></label>
+      <label><span data-i18n="ctl.style">Stil der gedruckten Vorlage</span>
+        <select id="style"><option value="color" data-i18n="style.color">Farbfelder + Symbole</option><option value="bw" data-i18n="style.bw">Schwarz-weiße Symbole (spart Tinte)</option></select></label>
+      <label class="check"><input type="checkbox" id="showSymbols"> <span data-i18n="ctl.symbols">Symbole in der Vorschau zeigen</span></label>
+    </div>
+
+    <div class="result">
+      <p class="stats" id="stats"></p>
+      <div class="previewWrap" tabindex="0" role="region" data-i18n-attr="aria-label:preview.region" aria-label="Vorschau der Stickvorlage, scrollbar"><canvas id="preview" role="img" data-i18n-attr="aria-label:preview.alt" aria-label="Vorschau der Kreuzstich-Stickvorlage"></canvas></div>
+      <div class="actions">
+        <button class="btn" id="print" type="button" data-i18n="btn.print">Vorlage drucken</button>
+        <button class="btn" id="pdf" type="button" data-i18n="btn.pdf">PDF herunterladen</button>
+        <button class="btn ghost" id="buy" type="button" data-i18n="btn.buy">Alle Größen freischalten, 5 €</button>
+        <span class="unlocked" id="unlockedNote" data-i18n="unlocked" hidden>Volle Freischaltung in diesem Browser aktiv.</span>
+      </div>
+      <p class="small" id="gateNote"></p>
+    </div>
+
+    <div class="floss">
+      <h2 class="h3" data-i18n="floss.h">Garnliste (DMC)</h2>
+      <div class="tableWrap" tabindex="0" role="region" data-i18n-attr="aria-label:floss.region" aria-label="Garnliste, scrollbar"><table class="key" id="key"></table></div>
+      <p class="small" data-i18n="floss.note">Bildschirmfarben sind nur ungefähr. Garn sieht im echten Licht anders aus. Stränge: Schätzung für 2 Fäden, etwa 1.800 volle Stiche pro Strang bei 14 count, Verschnitt eingerechnet.</p>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="band">
+  <h2 data-i18n="how.h">So geht&#x27;s</h2>
+  <ol class="steps">
+    <li data-i18n-html="how.1"><strong>Hochladen.</strong> Wähle ein Foto von deinem Haustier, ein Hochzeitsbild, ein Logo oder Pixelart.</li>
+    <li data-i18n-html="how.2"><strong>Anpassen.</strong> Stelle die Breite in Stichen und die Anzahl der Farben ein. Vorschau, fertige Größe und Garnliste ändern sich sofort.</li>
+    <li data-i18n-html="how.3"><strong>Drucken.</strong> Drucke die Vorlage oder speichere sie im Druckfenster als PDF: eine Titelseite mit Garnliste und Größen, danach Rasterseiten mit Symbolen, fetten Linien alle 10 Stiche und Zeilennummern.</li>
+  </ol>
+</section>
+
+<section id="pricing">
+  <h2 data-i18n="pricing.h">Preis</h2>
+  <div class="plans">
+    <div class="plan">
+      <h3 data-i18n="plan.free">Gratis</h3>
+      <p class="amount" data-i18n="plan.free.amount">0 €</p>
+      <ul><li data-i18n="plan.free.1">Vorschau in jeder Größe</li><li data-i18n="plan.free.2">Komplette DMC-Garnliste mit Stichzahlen und Strängen</li><li data-i18n="plan.free.3">Druckbare Vorlagen bis 40 x 40 Stiche</li></ul>
+    </div>
+    <div class="plan main">
+      <h3 data-i18n="plan.full">Volle Freischaltung</h3>
+      <p class="amount"><span class="price" data-i18n="price">5 €</span> <span class="small" data-i18n="plan.full.note">einmalig, keine Umsatzsteuer berechnet (§ 19 UStG)</span></p>
+      <ul><li data-i18n="plan.full.1">Druckbare Vorlagen bis 500 x 500 Stiche</li><li data-i18n="plan.full.2">Unbegrenzt viele Vorlagen in diesem Browser</li><li data-i18n="plan.full.3">Kein Konto, kein Abo</li></ul>
+      <button class="btn" id="buy2" type="button" data-i18n="btn.unlock">Freischalten für 5 €</button>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="band">
+  <h2 data-i18n="faq.h">FAQ</h2>
+  <details><summary data-i18n="faq.q1">Wird mein Foto irgendwohin hochgeladen?</summary><p data-i18n-html="faq.a1">Nein. Die Stickvorlage wird von Code erstellt, der in deinem Browser läuft. Das Foto wird nie an einen Server gesendet.</p></details>
+  <details><summary data-i18n="faq.q2">Welche Garnmarke?</summary><p data-i18n-html="faq.a2">DMC-Baumwollgarn mit sechs Fäden, zugeordnet aus einer Tabelle mit 489 DMC-Farben (Farbdaten: <a href="https://github.com/makebead/craft-color-codes" target="_blank" rel="noopener">craft-color-codes</a> von MakeBead, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>). Bildschirmfarben sind nur Näherungen. Prüfe das echte Garn, bevor du viel davon kaufst.</p></details>
+  <details><summary data-i18n="faq.q3">Wie groß wird das Bild?</summary><p data-i18n-html="faq.a3">Das Tool zeigt die fertige Größe für Aida mit 11, 14, 16 und 18 count. Beispiel: 140 Stiche Breite auf 14 count sind 10 Zoll (25,4 cm).</p></details>
+  <details><summary data-i18n="faq.q4">Was bekomme ich, wenn ich bezahle?</summary><p data-i18n-html="faq.a4">Drucken in jeder Größe bis 500 x 500 Stiche, für so viele Vorlagen, wie du willst, in dem Browser, in dem du bezahlt hast. Die Freischaltung wird in diesem Browser gespeichert. Bewahre deine PayPal-Bestellnummer auf. Wenn du deine Browserdaten löschst oder das Gerät wechselst, schreib dem Support mit der Bestellnummer.</p></details>
+  <details><summary data-i18n="faq.q5">Kann ich mein Geld zurückbekommen?</summary><p data-i18n-html="faq.a5">Ja. Siehe die <a href="refund.de.html">refund policy</a>.</p></details>
+  <details><summary data-i18n="faq.q6">Kann ich jedes Bild verwenden?</summary><p data-i18n-html="faq.a6">Nutze deine eigenen Fotos oder Bilder, deren Nutzung dir erlaubt ist. Wer fremde Kunstwerke in eine Stickvorlage umsetzt, kann deren Urheberrecht verletzen.</p></details>
+</section>
+
+<div class="modal" id="modal" hidden>
+  <div class="box" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="close" id="mClose" type="button" data-i18n-attr="aria-label:modal.close" aria-label="Schließen">×</button>
+    <div id="mBuy">
+      <h2 id="mTitle" data-i18n="m.title">Alle Vorlagengrößen freischalten</h2>
+      <p data-i18n-html="m.intro"><strong>Einmalig 5 €.</strong> Es wird keine Umsatzsteuer berechnet (Kleinunternehmer nach § 19 UStG). Druckbare Vorlagen bis 500 x 500 Stiche, unbegrenzt viele Vorlagen in diesem Browser.</p>
+      <label class="check consent"><input type="checkbox" id="consent"> <span data-i18n-html="m.consent">Ich möchte, dass die Freischaltung sofort beginnt. Mir ist bewusst, dass ich damit mein Widerrufsrecht von 14 Tagen für digitale Inhalte verliere. Die freiwillige <a href="refund.de.html" target="_blank">Erstattungsregelung</a> gilt weiterhin.</span></label>
+      <div id="ppButtons" class="paypal"><p class="small" data-i18n="m.hint">Setze oben den Haken, um die Zahlungsbuttons anzuzeigen.</p></div>
+      <p class="small" id="payErr" role="alert"></p>
+      <p class="small" data-i18n-html="m.seller">Verkauft von Mario Behrends (<a href="imprint.de.html" target="_blank">imprint</a>). Fragen: <span class="support"></span>.</p>
+    </div>
+    <div id="mThanks" hidden>
+      <h2 data-i18n="thanks.h">Danke, die Zahlung ist angekommen</h2>
+      <p><span data-i18n="thanks.order">Deine Bestellnummer:</span> <strong id="orderId"></strong></p>
+      <p data-i18n-html="thanks.keep"><strong>Bewahre diese Bestellnummer auf.</strong> Die volle Freischaltung ist jetzt in diesem Browser aktiv. Wenn etwas fehlt oder du den Browser wechselst, schreib an <span class="support"></span> und nenne deine Bestellnummer.</p>
+      <button class="btn" id="printNow" type="button" data-i18n="thanks.print">Vorlage jetzt drucken</button>
+      <button class="btn" id="pdfNow" type="button" data-i18n="btn.pdf">PDF herunterladen</button>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <p><span data-i18n-html="foot.links"><a href="imprint.de.html">Impressum</a> · <a href="terms.de.html">AGB</a> · <a href="privacy.de.html">Datenschutz</a> · <a href="refund.de.html">Erstattung</a></span> · <span data-i18n="foot.support">Support:</span> <span class="support"></span></p>
+  <p><a href="guides/" data-i18n="foot.guides">Anleitungen und DMC-Farbtabellen (auf Englisch)</a></p>
+  <p class="small" data-i18n="foot.note">FlossChart steht in keiner Verbindung zu DMC. DMC ist eine Marke ihres Inhabers. Garnfarben sind Näherungen.</p>
+</footer>
+
+<div id="printRoot" class="printRoot"></div>
+
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/analytics.js" data-page="index"></script>
+<script src="js/dmc.js"></script>
+<script src="js/pattern.js"></script>
+<script src="js/pdf.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

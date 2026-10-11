@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://floss.toolkitsdesk.com/sitemap.xml

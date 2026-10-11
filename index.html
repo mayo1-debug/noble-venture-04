@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlossChart: turn a photo into a cross-stitch pattern</title>
+<meta name="description" content="Turn any photo into a cross-stitch pattern with DMC floss colors, symbols, a floss list and skein estimates. Runs in your browser. Your photo never leaves your device.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://floss.toolkitsdesk.com/">
+<meta property="og:title" content="FlossChart: turn a photo into a cross-stitch pattern">
+<meta property="og:description" content="Turn any photo into a cross-stitch pattern with DMC floss colors, symbols, a floss list and skein estimates. Runs in your browser. Your photo never leaves your device.">
+<meta property="og:image" content="https://floss.toolkitsdesk.com/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FlossChart: turn a photo into a cross-stitch pattern">
+<meta name="twitter:description" content="Turn any photo into a cross-stitch pattern with DMC floss colors, symbols, a floss list and skein estimates. Runs in your browser. Your photo never leaves your device.">
+<meta name="twitter:image" content="https://floss.toolkitsdesk.com/share.png">
+<!-- seo:head -->
+<link rel="canonical" href="https://floss.toolkitsdesk.com/">
+<link rel="alternate" hreflang="en" href="https://floss.toolkitsdesk.com/">
+<link rel="alternate" hreflang="de" href="https://floss.toolkitsdesk.com/index.de.html">
+<link rel="alternate" hreflang="fr" href="https://floss.toolkitsdesk.com/index.fr.html">
+<link rel="alternate" hreflang="es" href="https://floss.toolkitsdesk.com/index.es.html">
+<link rel="alternate" hreflang="x-default" href="https://floss.toolkitsdesk.com/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"FlossChart","url":"https://floss.toolkitsdesk.com/","inLanguage":"en","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","description":"Turn any photo into a cross-stitch pattern with DMC floss colors, symbols, a floss list and skein estimates. Runs in your browser. Your photo never leaves your device.","offers":[{"@type":"Offer","price":"0","priceCurrency":"EUR","description":"Printable charts up to 40 x 40 stitches"},{"@type":"Offer","price":"5.00","priceCurrency":"EUR","description":"Printable charts up to 500 x 500 stitches"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is my photo uploaded anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. The pattern is made by code that runs in your browser. The photo is never sent to a server."}},{"@type":"Question","name":"Which floss brand?","acceptedAnswer":{"@type":"Answer","text":"DMC six-strand cotton, matched from a table of 489 DMC colors (color data: craft-color-codes by MakeBead, CC BY 4.0). Screen colors are approximations, so check the real thread before you buy a lot of it."}},{"@type":"Question","name":"How big will it be?","acceptedAnswer":{"@type":"Answer","text":"The tool shows the finished size for 11, 14, 16 and 18 count Aida. Example: 140 stitches wide on 14 count is 10 inches (25,4 cm)."}},{"@type":"Question","name":"What do I get when I pay?","acceptedAnswer":{"@type":"Answer","text":"Printing for every chart size up to 500 x 500 stitches, for as many patterns as you like, in the browser you paid in. The unlock is saved in this browser. Keep your PayPal order ID. If you clear your browser data or switch devices, contact support with the order ID."}},{"@type":"Question","name":"Can I get a refund?","acceptedAnswer":{"@type":"Answer","text":"Yes. See the refund policy."}},{"@type":"Question","name":"Can I use any picture?","acceptedAnswer":{"@type":"Answer","text":"Use your own photos, or pictures you have the right to use. Charting someone else's artwork can break their copyright."}}],"inLanguage":"en"}</script>
+<!-- /seo:head -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23b0413e'/%3E%3Cpath d='M3 3l10 10M13 3L3 13' stroke='%23fff' stroke-width='2.5'/%3E%3C/svg%3E">
+</head>
+<body>
+<div id="testmode" class="testmode" data-i18n="testmode" hidden>Test mode: payments use the PayPal sandbox. No real money is charged.</div>
+<header class="top">
+  <a class="brand" href="./"><span class="logo" aria-hidden="true">✕</span> FlossChart</a>
+  <div class="langsw" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Language">
+    <button type="button" data-lang="en" lang="en" aria-pressed="true">EN</button><button type="button" data-lang="de" lang="de" aria-pressed="false">DE</button><button type="button" data-lang="fr" lang="fr" aria-pressed="false">FR</button><button type="button" data-lang="es" lang="es" aria-pressed="false">ES</button>
+  </div>
+  <nav><a href="#how" data-i18n="nav.how">How it works</a> <a href="#pricing" data-i18n="nav.pricing">Pricing</a> <a href="#faq" data-i18n="nav.faq">FAQ</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <h1 data-i18n="hero.h1">Turn any photo into a cross-stitch pattern</h1>
+  <p class="lead" data-i18n="hero.lead">Upload a photo, pick the size and how many DMC colors you want. Get a clean, printable chart with symbols, a floss list and skein estimates.</p>
+  <ul class="ticks">
+    <li data-i18n-html="hero.t1">Runs in your browser. <strong>Your photo never leaves your device.</strong></li>
+    <li data-i18n="hero.t2">Fewer stray single stitches ("confetti") with one click.</li>
+    <li data-i18n-html="hero.t3">Charts up to 500 x 500 stitches. Free preview, free charts up to 40 x 40. Bigger charts: <strong>€5 once</strong>, no subscription.</li>
+  </ul>
+  <button class="btn big" id="upload" type="button" data-i18n="hero.upload">Upload a photo</button>
+  <button class="btn ghost big" id="sample" type="button" data-i18n="hero.sample">Try a sample picture</button>
+</section>
+
+<section class="tool" id="tool">
+  <input type="file" id="file" accept="image/*" hidden>
+  <div id="drop" class="drop" data-i18n="drop.text">Drop a photo here, or use the button above. JPG, PNG, WebP.</div>
+
+  <div class="panel" id="panel" hidden>
+    <div class="controls">
+      <label><span data-i18n="ctl.width">Width in stitches</span> <output id="wOut">100</output>
+        <input type="range" id="width" min="20" max="500" step="5" value="100"></label>
+      <label><span data-i18n="ctl.colors">Number of colors</span> <output id="cOut">20</output>
+        <input type="range" id="colors" min="2" max="60" value="20"></label>
+      <label><span data-i18n="ctl.cleanup">Confetti cleanup</span>
+        <select id="cleanup"><option value="0" data-i18n="cleanup.off">Off</option><option value="1" selected data-i18n="cleanup.normal">Normal</option><option value="2" data-i18n="cleanup.strong">Strong (also merges rare colors)</option></select></label>
+      <label><span data-i18n="ctl.fabric">Fabric (Aida count)</span>
+        <select id="fabric"><option>11</option><option selected>14</option><option>16</option><option>18</option></select></label>
+      <label><span data-i18n="ctl.style">Printed chart style</span>
+        <select id="style"><option value="color" data-i18n="style.color">Color blocks + symbols</option><option value="bw" data-i18n="style.bw">Black and white symbols (saves ink)</option></select></label>
+      <label class="check"><input type="checkbox" id="showSymbols"> <span data-i18n="ctl.symbols">Show symbols in preview</span></label>
+    </div>
+
+    <div class="result">
+      <p class="stats" id="stats"></p>
+      <div class="previewWrap" tabindex="0" role="region" data-i18n-attr="aria-label:preview.region" aria-label="Pattern preview, scrollable"><canvas id="preview" role="img" data-i18n-attr="aria-label:preview.alt" aria-label="Cross-stitch pattern preview"></canvas></div>
+      <div class="actions">
+        <button class="btn" id="print" type="button" data-i18n="btn.print">Print chart</button>
+        <button class="btn" id="pdf" type="button" data-i18n="btn.pdf">Download PDF</button>
+        <button class="btn ghost" id="buy" type="button" data-i18n="btn.buy">Unlock all sizes, €5</button>
+        <span class="unlocked" id="unlockedNote" data-i18n="unlocked" hidden>Full unlock active in this browser.</span>
+      </div>
+      <p class="small" id="gateNote"></p>
+    </div>
+
+    <div class="floss">
+      <h2 class="h3" data-i18n="floss.h">Floss list (DMC)</h2>
+      <div class="tableWrap" tabindex="0" role="region" data-i18n-attr="aria-label:floss.region" aria-label="Floss list, scrollable"><table class="key" id="key"></table></div>
+      <p class="small" data-i18n="floss.note">Screen colors are approximate. Thread looks different in real light. Skeins: estimate for 2 strands, about 1.800 full stitches per skein on 14 count, waste included.</p>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="band">
+  <h2 data-i18n="how.h">How it works</h2>
+  <ol class="steps">
+    <li data-i18n-html="how.1"><strong>Upload.</strong> Pick a photo of your pet, a wedding picture, a logo or pixel art.</li>
+    <li data-i18n-html="how.2"><strong>Adjust.</strong> Set the width in stitches and the number of colors. The preview, finished size and floss list update right away.</li>
+    <li data-i18n-html="how.3"><strong>Print.</strong> Print the chart or save it as a PDF from the print window: a cover page with the floss list and sizes, then grid pages with symbols, bold lines every 10 stitches and row numbers.</li>
+  </ol>
+</section>
+
+<section id="pricing">
+  <h2 data-i18n="pricing.h">Pricing</h2>
+  <div class="plans">
+    <div class="plan">
+      <h3 data-i18n="plan.free">Free</h3>
+      <p class="amount" data-i18n="plan.free.amount">€0</p>
+      <ul><li data-i18n="plan.free.1">Preview at any size</li><li data-i18n="plan.free.2">Full DMC floss list with stitch counts and skeins</li><li data-i18n="plan.free.3">Printable charts up to 40 x 40 stitches</li></ul>
+    </div>
+    <div class="plan main">
+      <h3 data-i18n="plan.full">Full unlock</h3>
+      <p class="amount"><span class="price" data-i18n="price">€5</span> <span class="small" data-i18n="plan.full.note">one-time, no VAT charged (Section 19 UStG)</span></p>
+      <ul><li data-i18n="plan.full.1">Printable charts up to 500 x 500 stitches</li><li data-i18n="plan.full.2">Unlimited patterns in this browser</li><li data-i18n="plan.full.3">No account, no subscription</li></ul>
+      <button class="btn" id="buy2" type="button" data-i18n="btn.unlock">Unlock for €5</button>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="band">
+  <h2 data-i18n="faq.h">FAQ</h2>
+  <details><summary data-i18n="faq.q1">Is my photo uploaded anywhere?</summary><p data-i18n-html="faq.a1">No. The pattern is made by code that runs in your browser. The photo is never sent to a server.</p></details>
+  <details><summary data-i18n="faq.q2">Which floss brand?</summary><p data-i18n-html="faq.a2">DMC six-strand cotton, matched from a table of 489 DMC colors (color data: <a href="https://github.com/makebead/craft-color-codes" target="_blank" rel="noopener">craft-color-codes</a> by MakeBead, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>). Screen colors are approximations, so check the real thread before you buy a lot of it.</p></details>
+  <details><summary data-i18n="faq.q3">How big will it be?</summary><p data-i18n-html="faq.a3">The tool shows the finished size for 11, 14, 16 and 18 count Aida. Example: 140 stitches wide on 14 count is 10 inches (25,4 cm).</p></details>
+  <details><summary data-i18n="faq.q4">What do I get when I pay?</summary><p data-i18n-html="faq.a4">Printing for every chart size up to 500 x 500 stitches, for as many patterns as you like, in the browser you paid in. The unlock is saved in this browser. Keep your PayPal order ID. If you clear your browser data or switch devices, contact support with the order ID.</p></details>
+  <details><summary data-i18n="faq.q5">Can I get a refund?</summary><p data-i18n-html="faq.a5">Yes. See the <a href="refund.html">refund policy</a>.</p></details>
+  <details><summary data-i18n="faq.q6">Can I use any picture?</summary><p data-i18n-html="faq.a6">Use your own photos, or pictures you have the right to use. Charting someone else's artwork can break their copyright.</p></details>
+</section>
+
+<div class="modal" id="modal" hidden>
+  <div class="box" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="close" id="mClose" type="button" data-i18n-attr="aria-label:modal.close" aria-label="Close">×</button>
+    <div id="mBuy">
+      <h2 id="mTitle" data-i18n="m.title">Unlock all chart sizes</h2>
+      <p data-i18n-html="m.intro"><strong>€5</strong> once. No VAT is charged (small business under Section 19 UStG). Printable charts up to 500 x 500 stitches, unlimited patterns in this browser.</p>
+      <label class="check consent"><input type="checkbox" id="consent"> <span data-i18n-html="m.consent">I want the unlock to start right away. I understand that I then lose the 14-day right of withdrawal for digital content. The voluntary <a href="refund.html" target="_blank">refund policy</a> still applies.</span></label>
+      <div id="ppButtons" class="paypal"><p class="small" data-i18n="m.hint">Tick the box above to show the payment buttons.</p></div>
+      <p class="small" id="payErr" role="alert"></p>
+      <p class="small" data-i18n-html="m.seller">Sold by Mario Behrends (<a href="imprint.html" target="_blank">imprint</a>). Questions: <span class="support"></span>.</p>
+    </div>
+    <div id="mThanks" hidden>
+      <h2 data-i18n="thanks.h">Thank you, payment received</h2>
+      <p><span data-i18n="thanks.order">Your order ID:</span> <strong id="orderId"></strong></p>
+      <p data-i18n-html="thanks.keep"><strong>Keep this order ID.</strong> The full unlock is now active in this browser. If anything is missing or you change browsers, contact <span class="support"></span> with your order ID.</p>
+      <button class="btn" id="printNow" type="button" data-i18n="thanks.print">Print your chart now</button>
+      <button class="btn" id="pdfNow" type="button" data-i18n="btn.pdf">Download PDF</button>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <p><span data-i18n-html="foot.links"><a href="imprint.html">Imprint</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a></span> · <span data-i18n="foot.support">Support:</span> <span class="support"></span></p>
+  <p><a href="guides/" data-i18n="foot.guides">Guides and DMC color charts</a></p>
+  <p class="small" data-i18n="foot.note">FlossChart is not affiliated with DMC. DMC is a trademark of its owner. Floss colors are approximations.</p>
+</footer>
+
+<div id="printRoot" class="printRoot"></div>
+
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/analytics.js" data-page="index"></script>
+<script src="js/dmc.js"></script>
+<script src="js/pattern.js"></script>
+<script src="js/pdf.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
