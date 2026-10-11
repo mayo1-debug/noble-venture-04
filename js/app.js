@@ -32,7 +32,7 @@
   function loadFile(file) {
     if (!file || !/^image\//.test(file.type)) { alert(t('alert.notimage')); return; }
     var url = URL.createObjectURL(file), im = new Image();
-    im.onload = function () { img = im; start(); };
+    im.onload = function () { img = im; showCredit(null); start(); };
     im.onerror = function () { alert(t('alert.unreadable')); };
     im.src = url;
   }
@@ -43,7 +43,23 @@
   ['dragleave', 'drop'].forEach(function (t) { drop.addEventListener(t, function (e) { e.preventDefault(); drop.classList.remove('over'); }); });
   drop.addEventListener('drop', function (e) { loadFile(e.dataTransfer.files[0]); });
 
-  $('sample').addEventListener('click', function () {
+  // ---------- Sample pictures ----------
+  // "Try a sample picture" walks through the paintings from the YouTube Shorts, then the drawn cat.
+  // Width and colors match the Shorts, so a visitor from a Short sees the same chart.
+  // Images: public-domain artworks, files released under CC0 by The Met and the Cleveland Museum of Art
+  // (marketing/assets/SOURCES.md).
+  var SAMPLES = [
+    { slug: 'great-wave', name: 'The Great Wave', artist: 'Katsushika Hokusai', w: 120, c: 24 },
+    { slug: 'sunflowers', name: 'Sunflowers', artist: 'Vincent van Gogh', w: 120, c: 30 },
+    { slug: 'cat-and-butterfly', name: 'Cat and Butterfly', artist: 'Min Zhen', w: 80, c: 24 },
+    { slug: 'irises', name: 'Irises', artist: 'Vincent van Gogh', w: 120, c: 30 },
+    { slug: 'sudden-shower-hiroshige', name: 'Sudden Shower over Shin-Ohashi Bridge', artist: 'Utagawa Hiroshige', w: 80, c: 24 },
+    { slug: 'water-pitcher-vermeer', name: 'Young Woman with a Water Pitcher', artist: 'Johannes Vermeer', w: 100, c: 30 },
+    { slug: 'flosschart-sample', w: 80, c: 12 }
+  ];
+  var sampleAt = -1, sampleNow = null;
+
+  function drawnScene() {
     // A small drawn scene, so people can try the tool without a photo.
     var c = document.createElement('canvas'); c.width = 400; c.height = 300;
     var g = c.getContext('2d');
@@ -54,8 +70,30 @@
     g.fillStyle = '#3f6140'; g.beginPath(); g.moveTo(0, 260); g.quadraticCurveTo(200, 200, 400, 270); g.lineTo(400, 300); g.lineTo(0, 300); g.fill();
     g.fillStyle = '#2f2a28'; g.beginPath(); g.ellipse(110, 225, 26, 18, 0, 0, 7); g.fill(); g.beginPath(); g.arc(136, 205, 13, 0, 7); g.fill();
     g.beginPath(); g.moveTo(128, 195); g.lineTo(132, 182); g.lineTo(138, 194); g.fill(); g.beginPath(); g.moveTo(140, 194); g.lineTo(146, 183); g.lineTo(147, 198); g.fill();
-    var im = new Image(); im.onload = function () { img = im; $('width').value = 80; $('colors').value = 12; start(); }; im.src = c.toDataURL();
-  });
+    return c.toDataURL();
+  }
+
+  function showCredit(s) {
+    sampleNow = s;
+    var box = $('sampleCredit');
+    if (!box) return;
+    box.hidden = !s;
+    if (s) $('sampleCreditText').textContent = s.name ? s.name + ' · ' + s.artist + ' · ' + t('sample.pd') : t('sample.own');
+  }
+
+  function loadSample(slug) {
+    var i = slug ? SAMPLES.map(function (s) { return s.slug; }).indexOf(slug) : (sampleAt + 1) % SAMPLES.length;
+    if (i < 0) return;
+    sampleAt = i;
+    var s = SAMPLES[i], im = new Image();
+    im.onload = function () { img = im; $('width').value = s.w; $('colors').value = s.c; showCredit(s); start(); };
+    im.onerror = function () { alert(t('alert.unreadable')); };
+    im.src = s.slug === 'flosschart-sample' ? drawnScene() : 'samples/' + s.slug + '.jpg';
+    track('sample_' + s.slug);
+  }
+  window.FlossSamples = { load: loadSample, list: SAMPLES };
+  $('sample').addEventListener('click', function () { loadSample(); });
+  if ($('sampleNext')) $('sampleNext').addEventListener('click', function () { loadSample(); });
 
   function start() {
     $('panel').hidden = false; $('drop').hidden = true;

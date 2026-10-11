@@ -95,3 +95,5 @@ main.guide{max-width:820px}
 .guide .tableWrap{max-height:none}
 .guide table.key code{font-size:13px}
 .guideList li{margin:6px 0}
+.sampleCredit{margin:-4px 0 10px;font-size:14px;color:var(--muted)}
+.linkBtn{background:none;border:0;padding:10px 4px;min-height:44px;font:inherit;font-weight:600;color:var(--accent2);text-decoration:underline;cursor:pointer}

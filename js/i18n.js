@@ -73,6 +73,9 @@
     },
     'hero.upload': { en: 'Upload a photo', de: 'Foto hochladen', fr: 'Importer une photo', es: 'Subir una foto' },
     'hero.sample': { en: 'Try a sample picture', de: 'Beispielbild ausprobieren', fr: 'Essayer une image d\'exemple', es: 'Probar una imagen de ejemplo' },
+    'sample.pd': { en: 'public domain', de: 'gemeinfrei', fr: 'domaine public', es: 'dominio público' },
+    'sample.own': { en: 'Sample picture drawn by FlossChart', de: 'Beispielbild, gezeichnet von FlossChart', fr: 'Image d\'exemple dessinée par FlossChart', es: 'Imagen de ejemplo dibujada por FlossChart' },
+    'sample.next': { en: 'Try another sample', de: 'Nächstes Beispiel', fr: 'Autre exemple', es: 'Otro ejemplo' },
     'drop.text': {
       en: 'Drop a photo here, or use the button above. JPG, PNG, WebP.',
       de: 'Foto hierher ziehen oder den Button oben nutzen. JPG, PNG, WebP.',
