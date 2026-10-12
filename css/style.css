@@ -97,3 +97,34 @@ main.guide{max-width:820px}
 .guideList li{margin:6px 0}
 .sampleCredit{margin:-4px 0 10px;font-size:14px;color:var(--muted)}
 .linkBtn{background:none;border:0;padding:10px 4px;min-height:44px;font:inherit;font-weight:600;color:var(--accent2);text-decoration:underline;cursor:pointer}
+/* Brand layer, 12 October 2026 (Operation-Noble standards/design): FlossChart is warm and handmade,
+   for cross-stitchers. Fraunces and Karla, self-hosted (OFL). Linen, madder red and sage thread colors.
+   Motif: the aida-cloth grid and a running stitch line. */
+@font-face{font-family:"Fraunces";src:url("../fonts/fraunces-latin-600-normal.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Fraunces";src:url("../fonts/fraunces-latin-800-normal.woff2") format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"Karla";src:url("../fonts/karla-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Karla";src:url("../fonts/karla-latin-700-normal.woff2") format("woff2");font-weight:700;font-display:swap}
+:root{--ink:#2a2320;--muted:#5f544d;--bg:#f6efe4;--card:#fffdf8;--line:#e3d6c4;--accent:#a3312b;--accent2:#7f231e;--band:#efe5d6;--sage:#5e7d62;--mustard:#e0a93b}
+body{font-family:"Karla",ui-sans-serif,system-ui,sans-serif;font-size:17px}
+h1,h2,h3,.brand,.amount{font-family:"Fraunces",ui-serif,Georgia,serif}
+h1{font-weight:800;letter-spacing:-.01em}
+h2{font-weight:600}
+.hero{position:relative;margin:0 -16px;padding:32px 16px 22px;border-radius:0 0 18px 18px;
+  background-color:var(--card);
+  background-image:linear-gradient(90deg,rgba(163,49,43,.06) 1px,transparent 1px),linear-gradient(rgba(163,49,43,.06) 1px,transparent 1px);
+  background-size:12px 12px}
+.hero h1::after{content:"";display:block;width:132px;height:5px;margin-top:16px;border-radius:3px;
+  background:repeating-linear-gradient(90deg,var(--accent) 0 12px,transparent 12px 18px)}
+.logo{background:var(--accent);border-radius:50%;box-shadow:0 0 0 3px var(--card),0 0 0 5px var(--mustard)}
+.btn{border-radius:999px;padding:12px 22px;font-weight:700;box-shadow:0 2px 0 var(--accent2)}
+.btn:hover{background:var(--accent2)}
+.btn.ghost{background:var(--card);border:2px dashed var(--accent);box-shadow:none}
+.ticks{list-style:none;padding-left:0}
+.ticks li{padding-left:28px;position:relative}
+.ticks li::before{content:"✕";position:absolute;left:4px;top:0;color:var(--sage);font-weight:700}
+.drop{border:2px dashed var(--sage);background:var(--card)}
+.band{background:var(--band)}
+.plan.main{border:2px dashed var(--accent)}
+.amount{color:var(--accent)}
+details{background:var(--card)}
+:focus-visible{outline:3px solid var(--sage);outline-offset:2px}
