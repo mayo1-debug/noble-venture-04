@@ -13,10 +13,17 @@
     f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
     f.allowFullscreen = true;
     f.referrerPolicy = 'strict-origin-when-cross-origin';
+    var thumb = document.createElement('span');
+    thumb.className = 'vthumb';
+    thumb.appendChild(f);
+    var cap = document.createElement('span');
+    cap.className = 'vtitle';
+    cap.textContent = t(card.getAttribute('data-key'));
     var box = document.createElement('div');
     box.className = 'vcard';
     box.setAttribute('data-playing', '1');
-    box.appendChild(f);
+    box.appendChild(thumb);
+    box.appendChild(cap);
     card.parentNode.replaceChild(box, card);
     track('video_play');
     track('video_play_' + card.getAttribute('data-slug'));
@@ -27,18 +34,21 @@
     c.addEventListener('click', function () { play(c); });
   });
 
-  // Previews run only while a card is mostly in view, and never under reduced motion.
+  // Previews run only while a card is mostly in view, and never under reduced motion. A tall card on a short screen counts
+  // as in view once a good part of it shows, so the ratio alone is not the test.
   if (!still && 'IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         var v = e.target.querySelector('video');
         if (!v) return;
-        if (e.isIntersecting) {
+        var inView = e.isIntersecting && (e.intersectionRatio >= 0.45 || e.intersectionRect.height >= 260);
+        if (inView) {
+          v.muted = true;
           if (!v.getAttribute('src')) v.src = v.getAttribute('data-src');
           var p = v.play(); if (p && p.catch) p.catch(function () {});
         } else { v.pause(); }
       });
-    }, { threshold: 0.6 });
+    }, { threshold: [0, 0.2, 0.45, 0.7, 1] });
     Array.prototype.forEach.call(cards, function (c) { io.observe(c); });
   }
 
