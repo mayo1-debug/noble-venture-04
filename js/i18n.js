@@ -204,6 +204,92 @@
       es: '<strong>Imprime.</strong> Imprime el patrón o guárdalo como PDF desde la ventana de impresión: una portada con la lista de hilos y los tamaños, y después páginas de cuadrícula con símbolos, líneas gruesas cada 10 puntos y números de fila.'
     },
 
+    // ---- Videos ----
+    'vid.h': {
+      en: 'Watch before you choose your settings',
+      de: 'Schau vor dem Einstellen kurz rein',
+      fr: 'À voir avant de choisir vos réglages',
+      es: 'Míralo antes de elegir tus ajustes'
+    },
+    'vid.lead': {
+      en: 'Ten short videos that show what each setting does to a chart. The videos are in English with on-screen text.',
+      de: 'Zehn kurze Videos zeigen, was jede Einstellung mit der Vorlage macht. Die Videos sind auf Englisch, mit Text im Bild.',
+      fr: 'Dix courtes vidéos montrent l\'effet de chaque réglage sur la grille. Les vidéos sont en anglais, avec du texte à l\'écran.',
+      es: 'Diez vídeos cortos muestran qué hace cada ajuste en un patrón. Los vídeos están en inglés, con texto en pantalla.'
+    },
+    'vid.note': {
+      en: 'A video loads from YouTube (privacy-enhanced mode) only after you press play. Until then nothing is sent to YouTube. See the <a href="{privacy}">privacy policy</a>.',
+      de: 'Ein Video wird erst von YouTube geladen (erweiterter Datenschutzmodus), wenn du auf Abspielen drückst. Vorher wird nichts an YouTube gesendet. Siehe <a href="{privacy}">Datenschutz</a>.',
+      fr: 'Une vidéo n\'est chargée depuis YouTube (mode confidentialité renforcée) qu\'après avoir appuyé sur lecture. Avant, rien n\'est envoyé à YouTube. Voir la <a href="{privacy}">politique de confidentialité</a>.',
+      es: 'Un vídeo se carga desde YouTube (modo de privacidad mejorada) solo después de pulsar reproducir. Hasta entonces no se envía nada a YouTube. Consulta la <a href="{privacy}">política de privacidad</a>.'
+    },
+    'vid.watch': {
+      en: 'Watch: how this works',
+      de: 'Video: so funktioniert das',
+      fr: 'Vidéo: comment ça marche',
+      es: 'Vídeo: cómo funciona'
+    },
+    'v.10': {
+      en: 'Three choices before you print',
+      de: 'Drei Entscheidungen vor dem Drucken',
+      fr: 'Trois choix avant d\'imprimer',
+      es: 'Tres decisiones antes de imprimir'
+    },
+    'v.03': {
+      en: 'How big are 100 stitches on 14 vs 18 count?',
+      de: 'Wie groß sind 100 Stiche auf 14 vs 18 count?',
+      fr: 'Quelle taille font 100 points en 14 ou 18 count?',
+      es: '¿Cuánto miden 100 puntos en 14 o 18 count?'
+    },
+    'v.04': {
+      en: '8 or 24 colors?',
+      de: '8 oder 24 Farben?',
+      fr: '8 ou 24 couleurs?',
+      es: '¿8 o 24 colores?'
+    },
+    'v.01': {
+      en: 'What confetti cleanup changes',
+      de: 'Was die Konfetti-Bereinigung ändert',
+      fr: 'Ce que change le nettoyage des confettis',
+      es: 'Qué cambia la limpieza de confeti'
+    },
+    'v.06': {
+      en: 'How to read the symbols',
+      de: 'So liest du die Symbole',
+      fr: 'Comment lire les symboles',
+      es: 'Cómo leer los símbolos'
+    },
+    'v.05': {
+      en: 'The DMC floss list',
+      de: 'Die DMC-Garnliste',
+      fr: 'La liste des fils DMC',
+      es: 'La lista de hilos DMC'
+    },
+    'v.09': {
+      en: 'What is inside the PDF',
+      de: 'Was im PDF steckt',
+      fr: 'Ce que contient le PDF',
+      es: 'Qué hay dentro del PDF'
+    },
+    'v.02': {
+      en: 'A free 40 × 40 chart',
+      de: 'Eine kostenlose 40 × 40 Vorlage',
+      fr: 'Une grille 40 × 40 gratuite',
+      es: 'Un patrón gratis de 40 × 40'
+    },
+    'v.07': {
+      en: 'Is my photo uploaded?',
+      de: 'Wird mein Foto hochgeladen?',
+      fr: 'Ma photo est-elle envoyée?',
+      es: '¿Se sube mi foto?'
+    },
+    'v.08': {
+      en: 'Pet photo to pattern',
+      de: 'Vom Haustierfoto zur Vorlage',
+      fr: 'De la photo d\'animal à la grille',
+      es: 'De la foto de mascota al patrón'
+    },
+
     // ---- Pricing ----
     'pricing.h': { en: 'Pricing', de: 'Preis', fr: 'Tarif', es: 'Precio' },
     'plan.free': { en: 'Free', de: 'Gratis', fr: 'Gratuit', es: 'Gratis' },
