@@ -128,12 +128,20 @@ h2{font-weight:600}
 .amount{color:var(--accent)}
 details{background:var(--card)}
 :focus-visible{outline:3px solid var(--sage);outline-offset:2px}
-.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:12px 0}
-.vcard{position:relative;aspect-ratio:9/16;border:0;border-radius:12px;padding:12px;background:#2b2523;color:#fff;font:inherit;font-weight:600;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;text-align:left;overflow:hidden}
-.vcard:hover{background:#3d3430}
+.vgroup{margin:20px 0 8px}
+.vgroup h3{margin:0 0 8px;font-size:20px}
+.vcar{position:relative}
+.vrow{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 16px;padding:4px 2px 12px;scrollbar-width:thin}
+.vcard{position:relative;flex:0 0 min(330px,78vw);aspect-ratio:9/16;scroll-snap-align:start;border:0;border-radius:14px;padding:0;background:#2b2523;color:#fff;font:inherit;font-weight:600;cursor:pointer;text-align:left;overflow:hidden}
+.vcard img,.vcard video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .vcard:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
-.vcard[data-playing]{padding:0;cursor:default;background:#000}
+.vcard::after{content:"";position:absolute;inset:auto 0 0 0;height:35%;background:linear-gradient(transparent,#000a)}
+.vcard[data-playing]{cursor:default;background:#000}
+.vcard[data-playing]::after{display:none}
 .vcard iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.vplay{align-self:center;margin-top:30%;width:48px;height:48px;line-height:48px;text-align:center;border-radius:50%;background:var(--accent);font-size:20px}
-.vtitle{font-size:15px;line-height:1.3}
+.vplay{position:absolute;right:14px;bottom:78px;width:56px;height:56px;line-height:56px;text-align:center;border-radius:50%;background:#b0413eee;font-size:22px;z-index:1}
+.vtitle{position:absolute;left:16px;right:16px;bottom:14px;z-index:1;font-size:18px;line-height:1.3}
+.vnav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:48px;height:48px;border-radius:50%;border:0;background:#fffe;box-shadow:0 2px 8px #0005;font-size:28px;line-height:1;cursor:pointer;color:var(--ink)}
+.vprev{left:6px}.vnext{right:6px}
 .vlink{display:inline-block;margin:0 0 14px;padding:10px 0;min-height:44px;background:none;border:0;color:var(--accent2);font:inherit;font-size:14px;text-decoration:underline;cursor:pointer}
+@media (prefers-reduced-motion:reduce){.vrow{scroll-behavior:auto}}

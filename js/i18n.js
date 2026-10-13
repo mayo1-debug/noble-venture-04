@@ -212,10 +212,10 @@
       es: 'Míralo antes de elegir tus ajustes'
     },
     'vid.lead': {
-      en: 'Ten short videos that show what each setting does to a chart. The videos are in English with on-screen text.',
-      de: 'Zehn kurze Videos zeigen, was jede Einstellung mit der Vorlage macht. Die Videos sind auf Englisch, mit Text im Bild.',
-      fr: 'Dix courtes vidéos montrent l\'effet de chaque réglage sur la grille. Les vidéos sont en anglais, avec du texte à l\'écran.',
-      es: 'Diez vídeos cortos muestran qué hace cada ajuste en un patrón. Los vídeos están en inglés, con texto en pantalla.'
+      en: 'Ten short videos, grouped by what you want to do. The videos are in English with on-screen text.',
+      de: 'Zehn kurze Videos, sortiert nach dem, was du vorhast. Die Videos sind auf Englisch, mit Text im Bild.',
+      fr: 'Dix courtes vidéos, classées selon ce que vous voulez faire. Les vidéos sont en anglais, avec du texte à l\'écran.',
+      es: 'Diez vídeos cortos, ordenados según lo que quieras hacer. Los vídeos están en inglés, con texto en pantalla.'
     },
     'vid.note': {
       en: 'A video loads from YouTube (privacy-enhanced mode) only after you press play. Until then nothing is sent to YouTube. See the <a href="{privacy}">privacy policy</a>.',
@@ -289,6 +289,13 @@
       fr: 'De la photo d\'animal à la grille',
       es: 'De la foto de mascota al patrón'
     },
+
+    // ---- Videos: groups ----
+    'g.settings': { en: 'Choosing your settings', de: 'Einstellungen wählen', fr: 'Choisir vos réglages', es: 'Elegir tus ajustes' },
+    'g.print': { en: 'Reading and printing your chart', de: 'Vorlage lesen und drucken', fr: 'Lire et imprimer votre grille', es: 'Leer e imprimir tu patrón' },
+    'g.start': { en: 'Before you start', de: 'Bevor du loslegst', fr: 'Avant de commencer', es: 'Antes de empezar' },
+    'vid.prev': { en: 'Previous videos', de: 'Vorherige Videos', fr: 'Vidéos précédentes', es: 'Vídeos anteriores' },
+    'vid.next': { en: 'Next videos', de: 'Nächste Videos', fr: 'Vidéos suivantes', es: 'Siguientes vídeos' },
 
     // ---- Pricing ----
     'pricing.h': { en: 'Pricing', de: 'Preis', fr: 'Tarif', es: 'Precio' },
