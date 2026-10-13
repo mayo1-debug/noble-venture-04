@@ -147,3 +147,28 @@ details{background:var(--card)}
 .vprev{left:6px}.vnext{right:6px}
 .vlink{display:inline-block;margin:0 0 14px;padding:10px 0;min-height:44px;background:none;border:0;color:var(--accent2);font:inherit;font-size:14px;text-decoration:underline;cursor:pointer}
 @media (prefers-reduced-motion:reduce){.vrow{scroll-behavior:auto}}
+
+/* Desktop (set by videos.js at 900 px and wider): tabs by use case, one big preview, a numbered list. One moving picture at a time. */
+.vtabs,.vnum,.vdesc{display:none}
+.vtext{display:block}
+.vstage{display:none}
+.vdesk .vtabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 22px}
+.vtab{min-height:44px;padding:9px 18px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:600;cursor:pointer}
+.vtab:hover{border-color:var(--accent)}
+.vtab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.vtab:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.vdesk .vgroup>h3{display:none}
+.vdesk .vlayout{display:grid;grid-template-columns:330px minmax(0,560px);gap:40px;align-items:start}
+.vdesk .vstage{display:block}
+.vstage-btn{display:block;width:100%;padding:0;border:0;background:none;cursor:pointer;font:inherit}
+.vstage-btn:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:14px}
+.vstage .vthumb{aspect-ratio:9/16}
+.vdesk .vnav{display:none!important}
+.vdesk .vrow{flex-direction:column;overflow:visible;gap:10px;padding:0;scroll-snap-type:none}
+.vdesk .vcard{flex:none;width:100%;flex-direction:row;align-items:flex-start;gap:14px;padding:14px 16px;background:var(--card);border:2px solid var(--line);border-radius:12px}
+.vdesk .vcard:hover{border-color:#d9c7b6}
+.vdesk .vcard[aria-current="true"]{border-color:var(--accent)}
+.vdesk .vcard .vthumb{display:none}
+.vdesk .vnum{display:block;flex:none;width:32px;height:32px;line-height:32px;text-align:center;border-radius:50%;background:var(--band);color:var(--accent2);font-weight:700}
+.vdesk .vcard[aria-current="true"] .vnum{background:var(--accent);color:#fff}
+.vdesk .vdesc{display:block;margin-top:4px;font-weight:400;font-size:15px;color:var(--muted)}

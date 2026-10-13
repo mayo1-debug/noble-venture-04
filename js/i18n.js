@@ -297,6 +297,68 @@
     'vid.prev': { en: 'Previous videos', de: 'Vorherige Videos', fr: 'Vidéos précédentes', es: 'Vídeos anteriores' },
     'vid.next': { en: 'Next videos', de: 'Nächste Videos', fr: 'Vidéos suivantes', es: 'Siguientes vídeos' },
 
+    // ---- Videos: one-line descriptions ----
+    'd.10': {
+      en: 'Width, number of colors and confetti cleanup: the three choices that shape your chart.',
+      de: 'Breite, Farbanzahl und Konfetti-Bereinigung: die drei Entscheidungen, die deine Vorlage formen.',
+      fr: 'Largeur, nombre de couleurs et nettoyage des confettis: les trois choix qui façonnent votre grille.',
+      es: 'Ancho, número de colores y limpieza de confeti: las tres decisiones que dan forma a tu patrón.'
+    },
+    'd.03': {
+      en: 'The same 100 stitches measure 18.1 cm on 14 count and 14.1 cm on 18 count.',
+      de: 'Dieselben 100 Stiche messen auf 14 count 18,1 cm und auf 18 count 14,1 cm.',
+      fr: 'Les mêmes 100 points mesurent 18,1 cm en 14 count et 14,1 cm en 18 count.',
+      es: 'Los mismos 100 puntos miden 18,1 cm en 14 count y 14,1 cm en 18 count.'
+    },
+    'd.04': {
+      en: 'Two previews of the same photo, 8 colors against 24.',
+      de: 'Zwei Vorschauen desselben Fotos, 8 Farben gegen 24.',
+      fr: 'Deux aperçus de la même photo, 8 couleurs contre 24.',
+      es: 'Dos vistas previas de la misma foto, 8 colores frente a 24.'
+    },
+    'd.01': {
+      en: 'On one cat photo: 140 lone stitches with cleanup off, none with normal cleanup.',
+      de: 'Bei einem Katzenfoto: 140 einzelne Stiche ohne Bereinigung, keiner mit normaler Bereinigung.',
+      fr: 'Sur une photo de chat: 140 points isolés sans nettoyage, aucun avec le nettoyage normal.',
+      es: 'En una foto de gato: 140 puntos sueltos sin limpieza, ninguno con limpieza normal.'
+    },
+    'd.06': {
+      en: 'Match a symbol in the grid to its DMC number in the key.',
+      de: 'Ordne ein Symbol im Raster seiner DMC-Nummer in der Legende zu.',
+      fr: 'Associez un symbole de la grille à son numéro DMC dans la légende.',
+      es: 'Relaciona un símbolo de la cuadrícula con su número DMC en la leyenda.'
+    },
+    'd.05': {
+      en: 'The PDF lists every DMC color with stitch counts and a skein estimate.',
+      de: 'Das PDF listet jede DMC-Farbe mit Stichzahl und Strangschätzung.',
+      fr: 'Le PDF liste chaque couleur DMC avec le nombre de points et une estimation d\'écheveaux.',
+      es: 'El PDF lista cada color DMC con el número de puntos y una estimación de madejas.'
+    },
+    'd.09': {
+      en: 'The floss key page, then the chart pages with symbols and a bold line every 10 stitches.',
+      de: 'Erst die Garnliste, dann die Rasterseiten mit Symbolen und einer kräftigen Linie alle 10 Stiche.',
+      fr: 'D\'abord la liste des fils, puis les pages de grille avec symboles et un trait épais tous les 10 points.',
+      es: 'Primero la lista de hilos, luego las páginas del patrón con símbolos y una línea gruesa cada 10 puntos.'
+    },
+    'd.02': {
+      en: 'One photo becomes a free 40 × 40 chart with 8 DMC colors.',
+      de: 'Ein Foto wird zu einer kostenlosen 40 × 40 Vorlage mit 8 DMC-Farben.',
+      fr: 'Une photo devient une grille 40 × 40 gratuite avec 8 couleurs DMC.',
+      es: 'Una foto se convierte en un patrón gratis de 40 × 40 con 8 colores DMC.'
+    },
+    'd.07': {
+      en: 'Your photo is turned into a chart in your browser. It is not uploaded.',
+      de: 'Dein Foto wird in deinem Browser zur Vorlage. Es wird nicht hochgeladen.',
+      fr: 'Votre photo devient une grille dans votre navigateur. Elle n\'est pas envoyée.',
+      es: 'Tu foto se convierte en patrón en tu navegador. No se sube.'
+    },
+    'd.08': {
+      en: 'A cat portrait becomes a 100 × 100 stitch preview with 14 DMC colors.',
+      de: 'Ein Katzenporträt wird zur Vorschau mit 100 × 100 Stichen und 14 DMC-Farben.',
+      fr: 'Un portrait de chat devient un aperçu de 100 × 100 points avec 14 couleurs DMC.',
+      es: 'Un retrato de gato se convierte en una vista previa de 100 × 100 puntos con 14 colores DMC.'
+    },
+
     // ---- Pricing ----
     'pricing.h': { en: 'Pricing', de: 'Preis', fr: 'Tarif', es: 'Precio' },
     'plan.free': { en: 'Free', de: 'Gratis', fr: 'Gratuit', es: 'Gratis' },
