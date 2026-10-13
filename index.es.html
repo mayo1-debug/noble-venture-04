@@ -136,7 +136,8 @@
       <h2 id="mTitle" data-i18n="m.title">Desbloquear todos los tamaños de patrón</h2>
       <p data-i18n-html="m.intro"><strong>5 €</strong> una sola vez. No se cobra IVA (pequeña empresa según el § 19 UStG). Patrones imprimibles de hasta 500 x 500 puntos, patrones ilimitados en este navegador.</p>
       <label class="check consent"><input type="checkbox" id="consent"> <span data-i18n-html="m.consent">Quiero que el desbloqueo empiece de inmediato. Entiendo que con ello pierdo el derecho de desistimiento de 14 días para contenidos digitales. La <a href="refund.es.html" target="_blank">política de reembolso</a> voluntaria sigue siendo válida.</span></label>
-      <div id="ppButtons" class="paypal"><p class="small" data-i18n="m.hint">Marca la casilla de arriba para mostrar los botones de pago.</p></div>
+      <p class="small" data-i18n="m.hint">Marca la casilla de arriba y pulsa después el botón de pedido.</p>
+      <div id="ppButtons" class="paypal"></div>
       <p class="small" id="payErr" role="alert"></p>
       <p class="small" data-i18n-html="m.seller">Vendido por Mario Behrends (<a href="imprint.es.html" target="_blank">imprint</a>). Preguntas: <span class="support"></span>.</p>
     </div>
@@ -152,7 +153,7 @@
 </main>
 
 <footer>
-  <p><span data-i18n-html="foot.links"><a href="imprint.es.html">Aviso legal</a> · <a href="terms.es.html">Condiciones</a> · <a href="privacy.es.html">Privacidad</a> · <a href="refund.es.html">Reembolsos</a></span> · <span data-i18n="foot.support">Soporte:</span> <span class="support"></span></p>
+  <p><span data-i18n-html="foot.links"><a href="imprint.es.html">Aviso legal</a> · <a href="terms.es.html">Condiciones</a> · <a href="privacy.es.html">Privacidad</a> · <a href="refund.es.html">Reembolsos</a> · <a href="{withdraw}">Desistir del contrato</a></span> · <span data-i18n="foot.support">Soporte:</span> <span class="support"></span></p>
   <p><a href="guides/" data-i18n="foot.guides">Guías y cartas de colores DMC (en inglés)</a></p>
   <p class="small" data-i18n="foot.note">FlossChart no tiene relación con DMC. DMC es una marca de su propietario. Los colores de los hilos son aproximaciones.</p>
 </footer>
@@ -165,6 +166,7 @@
 <script src="js/dmc.js"></script>
 <script src="js/pattern.js"></script>
 <script src="js/pdf.js"></script>
+<script src="js/noble-order.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

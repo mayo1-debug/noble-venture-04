@@ -283,7 +283,9 @@
     });
     return sdkLoading;
   }
-  var buttonsShown = false;
+  // The buyer ticks the consent box, then presses the own order button (Section 312j(3) BGB,
+  // noble-order.js). Only that click loads the PayPal SDK and shows the buttons.
+  var buttonsShown = false, order = null;
   function showButtons() {
     if (buttonsShown) return;
     buttonsShown = true;
@@ -291,7 +293,7 @@
     loadSdk().then(function () {
       $('ppButtons').innerHTML = '';
       return window.paypal.Buttons({
-        style: { layout: 'vertical', label: 'pay' },
+        style: { layout: 'vertical', label: 'buynow' },
         createOrder: function (data, actions) {
           track('checkout_start');
           return actions.order.create({
@@ -305,8 +307,15 @@
             store(function (s) { s.setItem(UNLOCK_KEY, JSON.stringify({ orderId: id, env: cfg.PAYPAL_ENV, at: new Date().toISOString() })); });
             track(cfg.PAYPAL_ENV === 'live' ? 'payment_complete' : 'payment_complete_sandbox');
             $('orderId').textContent = id;
-            $('mBuy').hidden = true; $('mThanks').hidden = false;
-            updateGate();
+            // The order confirmation (Section 312f BGB) is offered at the top of the thank-you view.
+            return window.NobleOrder.confirm({
+              lang: I.lang, business: 'FlossChart', product: cfg.PRODUCT_NAME, price: cfg.PRICE, currency: cfg.CURRENCY,
+              orderId: id, consentText: $('consent').closest('label').textContent.trim(), email: cfg.SUPPORT_EMAIL || '',
+              termsUrl: I.page('terms'), withdrawalUrl: I.page('refund'), withdrawUrl: I.page('withdraw'), mount: $('mThanks')
+            }).catch(function () {}).then(function () {
+              $('mBuy').hidden = true; $('mThanks').hidden = false;
+              updateGate();
+            });
           });
         },
         onCancel: function () { track('checkout_cancel'); },
@@ -315,18 +324,18 @@
     }).catch(function () {
       buttonsShown = false;
       $('ppButtons').innerHTML = '<p class="small" data-i18n="pp.error">' + esc(t('pp.error')) + '</p>';
+      if (order) order.button.hidden = false;
     });
   }
   function openBuy() {
     track('buy_open');
     $('mBuy').hidden = false; $('mThanks').hidden = true; setMsg($('payErr'), '');
     $('modal').hidden = false;
-    if ($('consent').checked) showButtons();
   }
   function closeModal() { $('modal').hidden = true; }
-  $('consent').addEventListener('change', function () {
-    if ($('consent').checked) showButtons();
-    $('ppButtons').style.display = $('consent').checked ? '' : 'none';
+  order = window.NobleOrder.gate({
+    consent: $('consent'), paypal: $('ppButtons'), lang: I.lang, price: cfg.PRICE, currency: cfg.CURRENCY,
+    onOrder: showButtons
   });
   $('buy').addEventListener('click', openBuy);
   $('buy2').addEventListener('click', openBuy);
@@ -335,7 +344,7 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
 
   // Re-draw everything that app.js writes itself when the language changes (and once at start).
-  I.onChange(function () { fillSupport(); if (pat) render(); else updateGate(); });
+  I.onChange(function () { fillSupport(); order.setLang(I.lang); if (pat) render(); else updateGate(); });
   fillSupport();
   updateGate();
 })();

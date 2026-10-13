@@ -136,7 +136,8 @@
       <h2 id="mTitle" data-i18n="m.title">Alle Vorlagengrößen freischalten</h2>
       <p data-i18n-html="m.intro"><strong>Einmalig 5 €.</strong> Es wird keine Umsatzsteuer berechnet (Kleinunternehmer nach § 19 UStG). Druckbare Vorlagen bis 500 x 500 Stiche, unbegrenzt viele Vorlagen in diesem Browser.</p>
       <label class="check consent"><input type="checkbox" id="consent"> <span data-i18n-html="m.consent">Ich möchte, dass die Freischaltung sofort beginnt. Mir ist bewusst, dass ich damit mein Widerrufsrecht von 14 Tagen für digitale Inhalte verliere. Die freiwillige <a href="refund.de.html" target="_blank">Erstattungsregelung</a> gilt weiterhin.</span></label>
-      <div id="ppButtons" class="paypal"><p class="small" data-i18n="m.hint">Setze oben den Haken, um die Zahlungsbuttons anzuzeigen.</p></div>
+      <p class="small" data-i18n="m.hint">Setze oben den Haken und klicke dann auf den Bestellbutton.</p>
+      <div id="ppButtons" class="paypal"></div>
       <p class="small" id="payErr" role="alert"></p>
       <p class="small" data-i18n-html="m.seller">Verkauft von Mario Behrends (<a href="imprint.de.html" target="_blank">imprint</a>). Fragen: <span class="support"></span>.</p>
     </div>
@@ -152,7 +153,7 @@
 </main>
 
 <footer>
-  <p><span data-i18n-html="foot.links"><a href="imprint.de.html">Impressum</a> · <a href="terms.de.html">AGB</a> · <a href="privacy.de.html">Datenschutz</a> · <a href="refund.de.html">Erstattung</a></span> · <span data-i18n="foot.support">Support:</span> <span class="support"></span></p>
+  <p><span data-i18n-html="foot.links"><a href="imprint.de.html">Impressum</a> · <a href="terms.de.html">AGB</a> · <a href="privacy.de.html">Datenschutz</a> · <a href="refund.de.html">Erstattung</a> · <a href="{withdraw}">Vertrag widerrufen</a></span> · <span data-i18n="foot.support">Support:</span> <span class="support"></span></p>
   <p><a href="guides/" data-i18n="foot.guides">Anleitungen und DMC-Farbtabellen (auf Englisch)</a></p>
   <p class="small" data-i18n="foot.note">FlossChart steht in keiner Verbindung zu DMC. DMC ist eine Marke ihres Inhabers. Garnfarben sind Näherungen.</p>
 </footer>
@@ -165,6 +166,7 @@
 <script src="js/dmc.js"></script>
 <script src="js/pattern.js"></script>
 <script src="js/pdf.js"></script>
+<script src="js/noble-order.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

@@ -136,7 +136,8 @@
       <h2 id="mTitle" data-i18n="m.title">Débloquer toutes les tailles de grille</h2>
       <p data-i18n-html="m.intro"><strong>5 €</strong> une seule fois. TVA non facturée (petite entreprise selon le § 19 UStG). Grilles imprimables jusqu'à 500 x 500 points, grilles illimitées dans ce navigateur.</p>
       <label class="check consent"><input type="checkbox" id="consent"> <span data-i18n-html="m.consent">Je souhaite que le déblocage commence immédiatement. Je comprends que je perds ainsi mon droit de rétractation de 14 jours pour les contenus numériques. La <a href="refund.fr.html" target="_blank">politique de remboursement</a> volontaire continue de s'appliquer.</span></label>
-      <div id="ppButtons" class="paypal"><p class="small" data-i18n="m.hint">Cochez la case ci-dessus pour afficher les boutons de paiement.</p></div>
+      <p class="small" data-i18n="m.hint">Cochez la case ci-dessus, puis cliquez sur le bouton de commande.</p>
+      <div id="ppButtons" class="paypal"></div>
       <p class="small" id="payErr" role="alert"></p>
       <p class="small" data-i18n-html="m.seller">Vendu par Mario Behrends (<a href="imprint.fr.html" target="_blank">imprint</a>). Questions: <span class="support"></span>.</p>
     </div>
@@ -152,7 +153,7 @@
 </main>
 
 <footer>
-  <p><span data-i18n-html="foot.links"><a href="imprint.fr.html">Mentions légales</a> · <a href="terms.fr.html">Conditions</a> · <a href="privacy.fr.html">Confidentialité</a> · <a href="refund.fr.html">Remboursements</a></span> · <span data-i18n="foot.support">Support:</span> <span class="support"></span></p>
+  <p><span data-i18n-html="foot.links"><a href="imprint.fr.html">Mentions légales</a> · <a href="terms.fr.html">Conditions</a> · <a href="privacy.fr.html">Confidentialité</a> · <a href="refund.fr.html">Remboursements</a> · <a href="{withdraw}">Se rétracter du contrat</a></span> · <span data-i18n="foot.support">Support:</span> <span class="support"></span></p>
   <p><a href="guides/" data-i18n="foot.guides">Guides et nuanciers DMC (en anglais)</a></p>
   <p class="small" data-i18n="foot.note">FlossChart n&#x27;est pas affilié à DMC. DMC est une marque de son propriétaire. Les couleurs des fils sont des approximations.</p>
 </footer>
@@ -165,6 +166,7 @@
 <script src="js/dmc.js"></script>
 <script src="js/pattern.js"></script>
 <script src="js/pdf.js"></script>
+<script src="js/noble-order.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

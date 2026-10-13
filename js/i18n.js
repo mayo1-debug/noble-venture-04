@@ -344,10 +344,10 @@
       es: 'Quiero que el desbloqueo empiece de inmediato. Entiendo que con ello pierdo el derecho de desistimiento de 14 días para contenidos digitales. La <a href="{refund}" target="_blank">política de reembolso</a> voluntaria sigue siendo válida.'
     },
     'm.hint': {
-      en: 'Tick the box above to show the payment buttons.',
-      de: 'Setze oben den Haken, um die Zahlungsbuttons anzuzeigen.',
-      fr: 'Cochez la case ci-dessus pour afficher les boutons de paiement.',
-      es: 'Marca la casilla de arriba para mostrar los botones de pago.'
+      en: 'Tick the box above, then press the order button.',
+      de: 'Setze oben den Haken und klicke dann auf den Bestellbutton.',
+      fr: 'Cochez la case ci-dessus, puis cliquez sur le bouton de commande.',
+      es: 'Marca la casilla de arriba y pulsa después el botón de pedido.'
     },
     'm.seller': {
       en: 'Sold by Mario Behrends (' + A_IMP + '). Questions: ' + SUP + '.',
@@ -397,10 +397,10 @@
     },
     'foot.support': { en: 'Support:', de: 'Support:', fr: 'Support:', es: 'Soporte:' },
     'foot.links': {
-      en: '<a href="{imprint}">Imprint</a> · <a href="{terms}">Terms</a> · <a href="{privacy}">Privacy</a> · <a href="{refund}">Refunds</a>',
-      de: '<a href="{imprint}">Impressum</a> · <a href="{terms}">AGB</a> · <a href="{privacy}">Datenschutz</a> · <a href="{refund}">Erstattung</a>',
-      fr: '<a href="{imprint}">Mentions légales</a> · <a href="{terms}">Conditions</a> · <a href="{privacy}">Confidentialité</a> · <a href="{refund}">Remboursements</a>',
-      es: '<a href="{imprint}">Aviso legal</a> · <a href="{terms}">Condiciones</a> · <a href="{privacy}">Privacidad</a> · <a href="{refund}">Reembolsos</a>'
+      en: '<a href="{imprint}">Imprint</a> · <a href="{terms}">Terms</a> · <a href="{privacy}">Privacy</a> · <a href="{refund}">Refunds</a> · <a href="{withdraw}">Withdraw from contract</a>',
+      de: '<a href="{imprint}">Impressum</a> · <a href="{terms}">AGB</a> · <a href="{privacy}">Datenschutz</a> · <a href="{refund}">Erstattung</a> · <a href="{withdraw}">Vertrag widerrufen</a>',
+      fr: '<a href="{imprint}">Mentions légales</a> · <a href="{terms}">Conditions</a> · <a href="{privacy}">Confidentialité</a> · <a href="{refund}">Remboursements</a> · <a href="{withdraw}">Se rétracter du contrat</a>',
+      es: '<a href="{imprint}">Aviso legal</a> · <a href="{terms}">Condiciones</a> · <a href="{privacy}">Privacidad</a> · <a href="{refund}">Reembolsos</a> · <a href="{withdraw}">Desistir del contrato</a>'
     },
     'foot.note': {
       en: 'FlossChart is not affiliated with DMC. DMC is a trademark of its owner. Floss colors are approximations.',
@@ -515,7 +515,7 @@
     return s.replace(/\{(\w+)\}/g, function (m, k) {
       if (vars && vars[k] !== undefined) return vars[k];
       if (k === 'price') return price();
-      if (k === 'refund' || k === 'imprint' || k === 'terms' || k === 'privacy') return page(k);
+      if (k === 'refund' || k === 'imprint' || k === 'terms' || k === 'privacy' || k === 'withdraw') return page(k);
       return m;
     });
   }
