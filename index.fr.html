@@ -181,6 +181,18 @@
   <details><summary data-i18n="faq.q6">Puis-je utiliser n&#x27;importe quelle image?</summary><p data-i18n-html="faq.a6">Utilisez vos propres photos ou des images dont vous avez le droit de vous servir. Transformer en grille l'œuvre de quelqu'un d'autre peut porter atteinte à son droit d'auteur.</p></details>
 </section>
 
+<section class="newsletter" hidden>
+  <h2 data-i18n="nl.h">Des conseils de point de croix par e-mail</h2>
+  <form method="post" target="_blank" class="newsletter-form">
+    <label for="nl-email" data-i18n="nl.label">E-mail</label>
+    <input type="email" id="nl-email" name="email" required placeholder="vous@exemple.fr" data-i18n-attr="placeholder:nl.ph" autocomplete="email">
+    <input type="hidden" name="embed" value="1">
+    <input type="hidden" name="tag" value="flosschart">
+    <button type="submit" class="btn" data-i18n="nl.btn">S&#x27;abonner</button>
+  </form>
+  <p class="small" data-i18n-html="nl.hint">Au plus 1 e-mail par semaine, envoyé via Buttondown (États-Unis). Vous confirmez d'abord par e-mail et pouvez vous désabonner dans chaque envoi. Voir la <a href="privacy.fr.html">politique de confidentialité</a>.</p>
+</section>
+
 <div class="modal" id="modal" hidden>
   <div class="box" role="dialog" aria-modal="true" aria-labelledby="mTitle">
     <button class="close" id="mClose" type="button" data-i18n-attr="aria-label:modal.close" aria-label="Fermer">×</button>
@@ -221,5 +233,6 @@
 <script src="js/noble-order.js"></script>
 <script src="js/app.js"></script>
 <script src="js/videos.js"></script>
+<script src="js/newsletter.js"></script>
 </body>
 </html>

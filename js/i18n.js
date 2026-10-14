@@ -557,6 +557,22 @@
       fr: '<a href="{imprint}">Mentions légales</a> · <a href="{terms}">Conditions</a> · <a href="{privacy}">Confidentialité</a> · <a href="{refund}">Remboursements</a> · <a href="{withdraw}">Se rétracter du contrat</a>',
       es: '<a href="{imprint}">Aviso legal</a> · <a href="{terms}">Condiciones</a> · <a href="{privacy}">Privacidad</a> · <a href="{refund}">Reembolsos</a> · <a href="{withdraw}">Desistir del contrato</a>'
     },
+    // ---- Newsletter form (hidden until BUTTONDOWN_USERNAME is set in config.js) ----
+    'nl.h': {
+      en: 'Cross-stitch tips by email',
+      de: 'Kreuzstich-Tipps per E-Mail',
+      fr: 'Des conseils de point de croix par e-mail',
+      es: 'Consejos de punto de cruz por correo'
+    },
+    'nl.label': { en: 'Email', de: 'E-Mail', fr: 'E-mail', es: 'Correo electrónico' },
+    'nl.ph': { en: 'you@example.com', de: 'du@beispiel.de', fr: 'vous@exemple.fr', es: 'tu@ejemplo.es' },
+    'nl.btn': { en: 'Subscribe', de: 'Abonnieren', fr: 'S\'abonner', es: 'Suscribirme' },
+    'nl.hint': {
+      en: 'At most 1 email a week, sent through Buttondown (USA). You confirm by email first and can unsubscribe in every issue. See the <a href="{privacy}">privacy policy</a>.',
+      de: 'Höchstens 1 E-Mail pro Woche, versendet über Buttondown (USA). Du bestätigst zuerst per E-Mail und kannst dich in jeder Ausgabe abmelden. Siehe <a href="{privacy}">Datenschutz</a>.',
+      fr: 'Au plus 1 e-mail par semaine, envoyé via Buttondown (États-Unis). Vous confirmez d\'abord par e-mail et pouvez vous désabonner dans chaque envoi. Voir la <a href="{privacy}">politique de confidentialité</a>.',
+      es: 'Como máximo 1 correo por semana, enviado a través de Buttondown (EE. UU.). Primero confirmas por correo y puedes darte de baja en cada envío. Consulta la <a href="{privacy}">política de privacidad</a>.'
+    },
     'foot.note': {
       en: 'FlossChart is not affiliated with DMC. DMC is a trademark of its owner. Floss colors are approximations.',
       de: 'FlossChart steht in keiner Verbindung zu DMC. DMC ist eine Marke ihres Inhabers. Garnfarben sind Näherungen.',

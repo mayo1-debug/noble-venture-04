@@ -18,6 +18,9 @@ window.NOBLE_CONFIG = {
 
   // Analytics. Abacus counters need no account. Empty ABACUS_NAMESPACE = off.
   ABACUS_NAMESPACE: 'flosschart-nv04',
+  // Buttondown username for the newsletter sign-up form (noble/PING.md). Empty = the form is hidden.
+  BUTTONDOWN_USERNAME: '',
+
   // Optional GoatCounter code (the part before .goatcounter.com). Empty = off.
   GOATCOUNTER_CODE: '',
   // Only these hostnames send analytics. Add the custom domain here after it is live.
