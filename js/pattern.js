@@ -194,7 +194,7 @@
     return { width: w, height: h, grid: grid, palette: palette, confetti: countLone(grid, w, h) };
   }
 
-  // Thread estimate. A full cross on 14 count uses about 0,88 cm of 2-strand floss
+  // Thread estimate. A full cross on 14 count uses about 0.88 cm of 2-strand floss
   // (two diagonals plus travel on the back). One skein is 8 m of 6 strands = 24 m of
   // 2-strand floss = about 2.740 stitches. We allow 35% waste: about 1.800 stitches per skein on 14 count.
   function skeins(count, fabricCount) {

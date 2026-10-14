@@ -131,7 +131,7 @@
   $('fabric').addEventListener('change', render);
   $('showSymbols').addEventListener('change', render);
 
-  function fmt(n, d) { return n.toFixed(d).replace('.', ','); }
+  function fmt(n, d) { var s = n.toFixed(d); return window.I18N && window.I18N.lang !== 'en' ? s.replace('.', ',') : s; }
   function thousands(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
   function textColor(rgb) { return (0.299 * rgb[0] + 0.587 * rgb[1] + 0.114 * rgb[2]) > 140 ? '#000' : '#fff'; }
   function rgbCss(rgb) { return 'rgb(' + rgb.join(',') + ')'; }

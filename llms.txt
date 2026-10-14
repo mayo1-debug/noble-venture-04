@@ -29,7 +29,7 @@
 ## Facts
 
 - Color data: 489 DMC six-strand floss colors from craft-color-codes by MakeBead (https://github.com/makebead/craft-color-codes), CC BY 4.0. Screen colors are approximations of real thread.
-- Finished size: stitches / fabric count = inches. 140 stitches on 14 count = 10 inches (25,4 cm).
+- Finished size: stitches / fabric count = inches. 140 stitches on 14 count = 10 inches (25.4 cm).
 - Skein estimate: about 1.800 full stitches per skein on 14 count with 2 strands, waste included.
 - FlossChart is not affiliated with DMC. DMC is a trademark of its owner.
 - Seller and contact: see the imprint (https://floss.toolkitsdesk.com/imprint.html). Support: support.toolkits.desk@gmail.com.

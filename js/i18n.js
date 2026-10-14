@@ -436,7 +436,7 @@
       es: '¿Qué tamaño tendrá?'
     },
     'faq.a3': {
-      en: 'The tool shows the finished size for 11, 14, 16 and 18 count Aida. Example: 140 stitches wide on 14 count is 10 inches (25,4 cm).',
+      en: 'The tool shows the finished size for 11, 14, 16 and 18 count Aida. Example: 140 stitches wide on 14 count is 10 inches (25.4 cm).',
       de: 'Das Tool zeigt die fertige Größe für Aida mit 11, 14, 16 und 18 count. Beispiel: 140 Stiche Breite auf 14 count sind 10 Zoll (25,4 cm).',
       fr: 'L\'outil affiche la taille finale pour de la toile Aida 11, 14, 16 et 18 count. Exemple: 140 points de large en 14 count font 10 pouces (25,4 cm).',
       es: 'La herramienta muestra el tamaño final para Aida de 11, 14, 16 y 18 count. Ejemplo: 140 puntos de ancho en 14 count son 10 pulgadas (25,4 cm).'
@@ -671,7 +671,8 @@
 
   // Price written the local way: €5 in English, 5 € (with a no-break space) elsewhere.
   function price() {
-    var v = String(cfg.PRICE || '').replace(/\.00$/, '').replace('.', ',');
+    var v = String(cfg.PRICE || '').replace(/\.00$/, '');
+    if (lang !== 'en') v = v.replace('.', ',');
     var cur = cfg.CURRENCY === 'EUR' ? '€' : cfg.CURRENCY;
     if (lang === 'en') return cur === '€' ? '€' + v : cur + ' ' + v;
     return v + ' ' + cur;

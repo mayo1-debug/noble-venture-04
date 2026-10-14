@@ -19,9 +19,9 @@
   }
 
   var PAGE_W = 50, PAGE_H = 65;       // stitches per chart page (same as the print view)
-  var M = 12, CELL = 3.6;             // mm: page margin, cell size (50 x 3,6 = 180 mm wide on A4)
+  var M = 12, CELL = 3.6;             // mm: page margin, cell size (50 x 3.6 = 180 mm wide on A4)
 
-  function fmt(n, d) { return n.toFixed(d).replace('.', ','); }
+  function fmt(n, d) { var s = n.toFixed(d); return window.I18N && window.I18N.lang !== 'en' ? s.replace('.', ',') : s; }
   function thousands(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
   function dark(rgb) { return (0.299 * rgb[0] + 0.587 * rgb[1] + 0.114 * rgb[2]) <= 140; }
 
