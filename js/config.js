@@ -26,7 +26,7 @@ window.NOBLE_CONFIG = {
   // Only these hostnames send analytics. Add the custom domain here after it is live.
   ANALYTICS_HOSTS: ['mayo1-debug.github.io', 'floss.toolkitsdesk.com'],
   // ?src=<channel> values that are counted as visit_src_<channel> (once per browser). Others are ignored.
-  SRC_CHANNELS: ['seo', 'pinterest', 'youtube', 'etsy', 'newsletter', 'directory']
+  SRC_CHANNELS: ['seo', 'pinterest', 'youtube', 'etsy', 'newsletter', 'directory', 'reddit', 'facebook', 'discord', 'forum', 'email']
 };
 window.NOBLE_CONFIG.PAYPAL_CLIENT_ID = window.NOBLE_CONFIG.PAYPAL_ENV === 'live'
   ? window.NOBLE_CONFIG.PAYPAL_CLIENT_ID_LIVE
